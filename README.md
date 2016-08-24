@@ -1,3 +1,3 @@
 ![Logo SASS Boilerplate](media/logo.ai)
 # SASS Boilerplate
-> A customized SASS boilerplate reayd to deploy for any project
+> A customized SASS boilerplate ready to deploy for any project
