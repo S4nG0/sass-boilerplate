@@ -4,6 +4,7 @@
 @import 'tools/variables';
 @import 'tools/functions';
 @import 'tools/mixins';
+@import 'tools/animations';
 
 // 2. Vendors
 @import 'vendors/normalize';
@@ -11,6 +12,7 @@
 // endbower
 
 // 3. Project bases
+@import 'base/accessibility';
 @import 'base/base';
 @import 'base/fonts';
 @import 'base/typography';
