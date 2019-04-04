@@ -4,22 +4,63 @@
 
 /// Regular font family
 /// @type List
-$text-font-stack: 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-font-stack : 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-font-headings : 'Times New Roman', 'Times', sans-serif !default;
 
 
 /// Copy text color
 /// @type Color
-$text-color: #222 !default;
+$text-color : #222222 !default;
+
+$cubic-bezier : cubic-bezier(.3, .8, .35, 1);
 
 
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length
 /// @prop {Map} values - Values are actual breakpoints expressed in pixels
 /// @see {mixin} respond-to
-$breakpoints: (
-    'xxs': (max-width: 359px),
-    'xs': (max-width: 575px),
-    'sm': (max-width: 767px),
-    'md': (max-width: 991px),
-    'lg': (max-width: 1199px)
+$breakpoints : (
+  'xxs': (max-width: 359px),
+  'xs': (max-width: 575px),
+  'sm': (max-width: 767px),
+  'md': (max-width: 991px),
+  'lg': (max-width: 1199px)
 ) !default;
+
+
+/// z-index map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+/// @see {mixin} map-get
+$zindex : (
+  modal : 9000,
+  navbar : 8000,
+  header : 7000,
+  search : 6000,
+  footer : 5000
+);
+
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+$spacer : 1rem !default;
+$spacers : () !default;
+$spacers : map-merge(
+    (
+      0: 0,
+      1: $spacer,
+      2: ($spacer * 2),
+      3: ($spacer * 3),
+      4: ($spacer * 4),
+      5: ($spacer * 5),
+      6: ($spacer * 6),
+      7: ($spacer * 7),
+      8: ($spacer * 8),
+      9: ($spacer * 9),
+      10: ($spacer * 10)
+    ),
+    $spacers
+);
