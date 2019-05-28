@@ -12,12 +12,15 @@ html {
   box-sizing : inherit;
 }
 
+* {
+  font-family             : $text-font-stack;
+}
+
 body {
   display                 : block;
   position                : relative;
 
   font-style              : normal;
-  font-family             : $text-font-stack;
 
   -moz-osx-font-smoothing : grayscale;
   -webkit-font-smoothing  : antialiased;
